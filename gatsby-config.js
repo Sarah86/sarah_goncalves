@@ -50,6 +50,7 @@ module.exports = client.getEntries().then(entries => {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: "UA-142747868-1",
+        head: true,
       },
     });
   }
