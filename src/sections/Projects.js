@@ -75,8 +75,10 @@ const ImageContainer = styled.div`
   position: relative;
 
   ${MEDIA_QUERY_SMALL} {
+    margin: auto;
     width: calc(${CARD_HEIGHT} / 2);
-    height: calc(${CARD_HEIGHT} / 2);
+    height: calc(${CARD_HEIGHT});
+    position: relative;
   }
 `;
 
@@ -89,10 +91,12 @@ const ProjectImage = styled(Image)`
   transform: translateY(-50%);
 
   ${MEDIA_QUERY_SMALL} {
-    height: calc(${CARD_HEIGHT} / 2);
-    width: calc(${CARD_HEIGHT} / 2);
-    margin-top: calc(${CARD_HEIGHT} / 4);
-    padding: 10px;
+  width: ${CARD_HEIGHT};
+  height: auto;
+  padding: 0 20px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   }
 `;
 
@@ -103,7 +107,10 @@ const ProjectTag = styled.div`
   top: 0; /*don't know why I have to add 3.5px here ... */
 
   ${MEDIA_QUERY_SMALL} {
-    top: calc(-${CARD_HEIGHT} - 3.5px + (${CARD_HEIGHT} / 4));
+    position: absolute;
+    height: ${CARD_HEIGHT};
+    width: 100%;
+    top: 0;
   }
 `;
 
