@@ -27,8 +27,8 @@ const plugins = [
   {
     resolve: 'gatsby-source-contentful',
     options: {
-      spaceId: 'k721jnxe76g2',
-      accessToken: 'tBzRxs0yu93abrx7uf0kP1q8e21nXHDW8oRM2teXotE',
+      spaceId: SPACE_ID,
+      accessToken: ACCESS_TOKEN,
     },
   },
   'gatsby-transformer-remark',
@@ -49,16 +49,7 @@ module.exports = client.getEntries().then(entries => {
     plugins.push({
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-142747868-1',
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
+        trackingId: ANALYTICS_ID,
       },
     });
   }
