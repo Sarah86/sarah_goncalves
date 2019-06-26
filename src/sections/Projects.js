@@ -114,6 +114,15 @@ const ProjectTag = styled.div`
   }
 `;
 
+const ProjectCard = styled.div`
+  /*filter: opacity(0.3);
+  transition: all 0.5s linear;
+  overflow:hidden;
+  &:hover {
+    filter: opacity(1);
+  }*/
+`;
+
 const Project = ({
   name,
   description,
@@ -124,56 +133,58 @@ const Project = ({
   logo,
 }) => (
   <Card p={0}>
-    <Flex style={{ height: CARD_HEIGHT }}>
-      <TextContainer>
-        <span>
-          <Title my={2} pb={1}>
-            {name}
-          </Title>
-        </span>
-        <Text width={[1]} style={{ overflow: 'auto' }}>
-          {description}
-        </Text>
-      </TextContainer>
+    <ProjectCard>
+      <Flex style={{ height: CARD_HEIGHT }}>
+        <TextContainer>
+          <span>
+            <Title my={2} pb={1}>
+              {name}
+            </Title>
+          </span>
+          <Text width={[1]} style={{ overflow: 'auto' }}>
+            {description}
+          </Text>
+        </TextContainer>
 
-      <ImageContainer>
-        <ProjectImage src={logo.image.src} alt={logo.title} />
-        <ProjectTag>
-          <Flex
-            style={{
-              float: 'right',
-            }}
-          >
-            {/* <Box mx={1} fontSize={5}>
+        <ImageContainer>
+          <ProjectImage src={logo.image.src} alt={logo.title} />
+          <ProjectTag>
+            <Flex
+              style={{
+                float: 'right',
+              }}
+            >
+              {/* <Box mx={1} fontSize={5}>
                <SocialLink
                 name="Check repository"
                 fontAwesomeIcon="github"
                 url={repositoryUrl}
               /> 
             </Box> */}
-            <Box mx={1} fontSize={5}>
-              <SocialLink
-                name="See project"
-                fontAwesomeIcon="globe"
-                url={projectUrl}
-              />
-            </Box>
-          </Flex>
-          <ImageSubtitle
-            bg="primaryLight"
-            color="white"
-            y="bottom"
-            x="right"
-            round
-          >
-            {type}
-          </ImageSubtitle>
-          <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
-          </Hide>
-        </ProjectTag>
-      </ImageContainer>
-    </Flex>
+              <Box mx={1} fontSize={5}>
+                <SocialLink
+                  name="See project"
+                  fontAwesomeIcon="globe"
+                  url={projectUrl}
+                />
+              </Box>
+            </Flex>
+            <ImageSubtitle
+              bg="primaryLight"
+              color="white"
+              y="bottom"
+              x="right"
+              round
+            >
+              {type}
+            </ImageSubtitle>
+            <Hide query={MEDIA_QUERY_SMALL}>
+              <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
+            </Hide>
+          </ProjectTag>
+        </ImageContainer>
+      </Flex>
+    </ProjectCard>
   </Card>
 );
 

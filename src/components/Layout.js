@@ -6,7 +6,6 @@ import 'react-tippy/dist/tippy.css';
 import config from 'react-reveal/globals';
 import colors from '../../colors';
 import Helmet from './Helmet';
-import '../styles/layout.css';
 
 const GlobalStyle = createGlobalStyle`
 *,
