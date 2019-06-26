@@ -71,7 +71,7 @@ const TextContainer = styled.div`
 const ImageContainer = styled.div`
   margin: auto;
   width: ${CARD_HEIGHT};
-  height:  ${CARD_HEIGHT};
+  height: ${CARD_HEIGHT};
   position: relative;
 
   ${MEDIA_QUERY_SMALL} {
@@ -83,20 +83,20 @@ const ImageContainer = styled.div`
 `;
 
 const ProjectImage = styled(Image)`
-  width: ${CARD_HEIGHT};
   height: auto;
   padding: 0 20px;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 
   ${MEDIA_QUERY_SMALL} {
-  width: ${CARD_HEIGHT};
-  height: auto;
-  padding: 0 20px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    height: auto;
+    padding: 0 20px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
   }
 `;
 
