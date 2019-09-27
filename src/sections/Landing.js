@@ -42,7 +42,7 @@ const Background = () => (
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
 
 const LandingPage = () => (
-  <Section.Container id="home" Background={Background}>
+  <Section.Container id="home" minHeight="100vh">
     <StaticQuery
       query={graphql`
         query SiteTitleQuery {
