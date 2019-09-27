@@ -124,7 +124,7 @@ const Tools = () => (
       <Fade bottom delay={5 * 200}>
         <Tool src={Jquery} title="jQuery" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={5 * 200}>
         <Tool src={ReactLogo} title="React.js" />
       </Fade>
       <Fade bottom delay={6 * 200}>
