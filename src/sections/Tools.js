@@ -109,71 +109,70 @@ const Tools = () => (
   <Section.Container id="projects">
     <Section.Header name="Tools" icon="🛠️" Box="tools" />
     <CardContainer minWidth="150px" minWidthMobile="100px">
-      <Fade bottom delay={1 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={HTML} title="HTML5" />
       </Fade>
       <Fade bottom delay={2 * 200}>
         <Tool src={CSS} title="CSS3" />
       </Fade>
-      <Fade bottom delay={3 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Sass} title="Sass" />
       </Fade>
-      <Fade bottom delay={4 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Javascript} title="Javascript" />
       </Fade>
-      <Fade bottom delay={5 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Jquery} title="jQuery" />
       </Fade>
-      <Fade bottom delay={5 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={ReactLogo} title="React.js" />
       </Fade>
-      <Fade bottom delay={6 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Github} title="Github" />
       </Fade>
-      <Fade bottom delay={7 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Npm} title="NPM" />
       </Fade>
-      <Fade bottom delay={8 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Yarn} title="Yarn" />
       </Fade>
-      <Fade bottom delay={9 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Vscode} title="Virtual Studio Code" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Gulp} title="Gulp" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Php} title="Php" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Wordpress} title="Wordpress" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Netlify} title="Netlify" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={NetlifyCms} title="NetlifyCMS" />
       </Fade>
-
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={TagManager} title="Google Tag Manager" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={GoogleAnalytics} title="Google Analytics" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={GoogleAdSense} title="Google Adsense" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={GoogleAds} title="Google Ads" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={FbBusiness} title="Facebook Business Manager" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={SendInBluse} title="SendInBlue" />
       </Fade>
-      <Fade bottom delay={10 * 200}>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Mailchimp} title="Mailchimp" />
       </Fade>
     </CardContainer>
