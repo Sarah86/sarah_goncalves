@@ -6,15 +6,18 @@ import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import CSS from '../images/css.png';
 import FbBusiness from '../images/fb-businessmanager.jpg';
+import GatsbyLogo from '../images/Gatsby-Logo.svg';
 import Github from '../images/Github.png';
 import GoogleAds from '../images/googleads.png';
 import GoogleAdSense from '../images/googleadsense.png';
 import GoogleAnalytics from '../images/googleanalytics.png';
+import GraphQl from '../images/graphql.png';
 import Gulp from '../images/Gulp.png';
 import HTML from '../images/HTML.png';
 import Javascript from '../images/javascript.png';
 import Jquery from '../images/jquery.png';
 import Mailchimp from '../images/mailchimp.jpg';
+import MySql from '../images/mysql.png';
 import Netlify from '../images/netlify.png';
 import NetlifyCms from '../images/netlifycms.png';
 import Npm from '../images/npm.png';
@@ -128,6 +131,12 @@ const Tools = () => (
         <Tool src={ReactLogo} title="React.js" />
       </Fade>
       <Fade bottom delay={2 * 200}>
+        <Tool src={GatsbyLogo} title="Gatsby" />
+      </Fade>
+      <Fade bottom delay={2 * 200}>
+        <Tool src={GraphQl} title="GraphQL" />
+      </Fade>
+      <Fade bottom delay={2 * 200}>
         <Tool src={Github} title="Github" />
       </Fade>
       <Fade bottom delay={2 * 200}>
@@ -147,6 +156,9 @@ const Tools = () => (
       </Fade>
       <Fade bottom delay={2 * 200}>
         <Tool src={Wordpress} title="Wordpress" />
+      </Fade>
+      <Fade bottom delay={2 * 200}>
+        <Tool src={MySql} title="MySQL" />
       </Fade>
       <Fade bottom delay={2 * 200}>
         <Tool src={Netlify} title="Netlify" />
