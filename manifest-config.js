@@ -1,8 +1,8 @@
 const colors = require('./colors');
 
 module.exports = {
-  name: 'Sarah Goncalves` · Portfolio',
-  short_name: 'Sarah Goncalves',
+  name: 'Sarah Goncalves',
+  short_name: 'Sarah',
   start_url: '/',
   background_color: colors.background,
   theme_color: colors.primary,
