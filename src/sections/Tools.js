@@ -1,9 +1,11 @@
 import React from 'react';
 import { Image, Text, Flex, Box } from 'rebass';
 import styled from 'styled-components';
+
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
+
 import CSS from '../images/css.png';
 import FbBusiness from '../images/fb-businessmanager.jpg';
 import GatsbyLogo from '../images/Gatsby-Logo.svg';
@@ -109,7 +111,7 @@ const Tool = ({ src, title }) => (
 );
 
 const Tools = () => (
-  <Section.Container id="projects">
+  <Section.Container id="tools">
     <Section.Header name="Tools" icon="🛠️" Box="tools" />
     <CardContainer minWidth="150px" minWidthMobile="100px">
       <Fade bottom delay={2 * 200}>
