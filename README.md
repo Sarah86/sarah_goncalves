@@ -1,3 +1,7 @@
+Nesse website eu usei como starter o https://gatsby-starter-mate.netlify.com/ e depois fui modificando ao meu gosto :)
+
+
+
 ![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/EmaSuriano/gatsby-starter-mate.svg)](https://greenkeeper.io/)
