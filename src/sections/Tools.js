@@ -5,34 +5,9 @@ import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
+import ToolsArr from '../data/tools';
 
-import CSS from '../images/css.png';
-import FbBusiness from '../images/fb-businessmanager.jpg';
-import GatsbyLogo from '../images/Gatsby-Logo.svg';
-import Github from '../images/Github.png';
-import GoogleAds from '../images/googleads.png';
-import GoogleAdSense from '../images/googleadsense.png';
-import GoogleAnalytics from '../images/googleanalytics.png';
-import GraphQl from '../images/graphql.png';
-import Gulp from '../images/Gulp.png';
-import HTML from '../images/HTML.png';
-import Javascript from '../images/javascript.png';
-import Jquery from '../images/jquery.png';
-import Mailchimp from '../images/mailchimp.jpg';
-import MySql from '../images/mysql.png';
-import Netlify from '../images/netlify.png';
-import NetlifyCms from '../images/netlifycms.png';
-import Npm from '../images/npm.png';
-import Php from '../images/php.png';
-import ReactLogo from '../images/react.webp';
-import Sass from '../images/sass.png';
-import SendInBluse from '../images/sendinblue.png';
-import TagManager from '../images/tagmanager.png';
-import Vscode from '../images/vscode.png';
-import Wordpress from '../images/wordpress.png';
-import Yarn from '../images/yarn.png';
-
-const CARD_HEIGHT = '150px';
+const CARD_HEIGHT = '100px';
 
 const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
 
@@ -72,8 +47,8 @@ const ImageContainer = styled.div`
 
 const ProjectImage = styled(Image)`
   height: auto;
-  max-height: 90%;
-  padding: 0 20px;
+  max-height: 80%;
+  padding: 0 10px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -81,7 +56,7 @@ const ProjectImage = styled(Image)`
 
   ${MEDIA_QUERY_SMALL} {
     height: auto;
-    padding: 0 20px;
+    padding: 0 10px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -89,108 +64,31 @@ const ProjectImage = styled(Image)`
   }
 `;
 
-const ProjectCard = styled.div`
-  /*filter: opacity(0.3);
-  transition: all 0.5s linear;
-  overflow:hidden;
-  &:hover {
-    filter: opacity(1);
-  }*/
-`;
+const Tools = () => {
+  const ToolItem = ToolsArr.sort((a, b) => (a.name > b.name ? 1 : -1)).map(
+    tool => (
+      <Fade bottom delay={2 * 200}>
+        <a href={tool.link}>
+          <Card>
+            <Flex style={{ height: CARD_HEIGHT }}>
+              <ImageContainer>
+                <ProjectImage src={tool.icon} title={tool.name} />
+              </ImageContainer>
+            </Flex>
+          </Card>
+        </a>
+      </Fade>
+    ),
+  );
 
-const Tool = ({ src, title }) => (
-  <Card>
-    <ProjectCard>
-      <Flex style={{ height: CARD_HEIGHT }}>
-        <ImageContainer>
-          <ProjectImage src={src} title={title} />
-        </ImageContainer>
-      </Flex>
-    </ProjectCard>
-  </Card>
-);
-
-const Tools = () => (
-  <Section.Container id="tools">
-    <Section.Header name="Tools" icon="🛠️" Box="tools" />
-    <CardContainer minWidth="150px" minWidthMobile="100px">
-      <Fade bottom delay={2 * 200}>
-        <Tool src={HTML} title="HTML5" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={CSS} title="CSS3" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Sass} title="Sass" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Javascript} title="Javascript" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Jquery} title="jQuery" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={ReactLogo} title="React.js" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={GatsbyLogo} title="Gatsby" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={GraphQl} title="GraphQL" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Github} title="Github" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Npm} title="NPM" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Yarn} title="Yarn" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Vscode} title="Virtual Studio Code" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Gulp} title="Gulp" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Php} title="Php" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Wordpress} title="Wordpress" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={MySql} title="MySQL" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Netlify} title="Netlify" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={NetlifyCms} title="NetlifyCMS" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={TagManager} title="Google Tag Manager" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={GoogleAnalytics} title="Google Analytics" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={GoogleAdSense} title="Google Adsense" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={GoogleAds} title="Google Ads" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={FbBusiness} title="Facebook Business Manager" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={SendInBluse} title="SendInBlue" />
-      </Fade>
-      <Fade bottom delay={2 * 200}>
-        <Tool src={Mailchimp} title="Mailchimp" />
-      </Fade>
-    </CardContainer>
-  </Section.Container>
-);
+  return (
+    <Section.Container id="tools">
+      <Section.Header name="Tools" icon="🛠️" Box="tools" />
+      <CardContainer minWidth="90px" minWidthMobile="60px">
+        {ToolItem}
+      </CardContainer>
+    </Section.Container>
+  );
+};
 
 export default Tools;
