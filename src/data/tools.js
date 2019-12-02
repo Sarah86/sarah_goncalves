@@ -26,6 +26,14 @@ import Vscode from '../images/vscode.png';
 import Wordpress from '../images/wordpress.png';
 import Yarn from '../images/yarn.png';
 import Kubuntu from '../images/kubuntu.jpg';
+import Lubuntu from '../images/lubuntu.png';
+import Ubuntu from '../images/ubuntu.jpeg';
+import PhotoPea from '../images/photopea.png';
+import Figma from '../images/figma.png';
+import Docker from '../images/docker.png';
+import DatoCMS from '../images/datocms.png';
+import Contentful from '../images/contentful.png';
+import Bitnami from '../images/bitnami.jpeg';
 
 const ToolsArr = [
   {
@@ -131,6 +139,38 @@ const ToolsArr = [
   {
     icon: Kubuntu,
     name: 'Kubuntu',
+  },
+  {
+    icon: Docker,
+    name: 'Docker',
+  },
+  {
+    icon: Bitnami,
+    name: 'Bitnami',
+  },
+  {
+    icon: Contentful,
+    name: 'Contentful',
+  },
+  {
+    icon: DatoCMS,
+    name: 'DatoCMS',
+  },
+  {
+    icon: Figma,
+    name: 'Figma',
+  },
+  {
+    icon: Lubuntu,
+    name: 'Lubuntu',
+  },
+  {
+    icon: Ubuntu,
+    name: 'Ubuntu',
+  },
+  {
+    icon: PhotoPea,
+    name: 'PhotoPea',
   },
 ];
 
