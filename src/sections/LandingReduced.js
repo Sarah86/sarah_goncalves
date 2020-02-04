@@ -13,7 +13,7 @@ const LandingPage = () => (
   <Section.Container id="home" minHeight="100vh">
     <StaticQuery
       query={graphql`
-        query SiteTitleQuery {
+        query SiteTitleReducedQuery {
           contentfulAbout {
             name
             roles
@@ -49,13 +49,7 @@ const LandingPage = () => (
               textAlign="center"
               style={centerHorizontally}
             >
-              <TextLoop>
-                {roles.map(text => (
-                  <Text width={[300, 500]} key={text}>
-                    {text}
-                  </Text>
-                ))}
-              </TextLoop>
+              <Text width={'100%'}>Let's do something beautiful together!</Text>
             </Heading>
 
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">

@@ -12,6 +12,11 @@ const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 const HeaderContainer = styled(Headroom)`
   .headroom--pinned {
     background: ${props => props.theme.colors.primaryDark};
+    span {
+      font-size: 13px;
+      display: flex;
+      margin: 2em 0.5em;
+    }
   }
 
   position: absolute;
