@@ -34,6 +34,7 @@ import Docker from '../images/docker.png';
 import DatoCMS from '../images/datocms.png';
 import Contentful from '../images/contentful.png';
 import Bitnami from '../images/bitnami.jpeg';
+import Opencart from '../images/opencart-logo.png';
 
 const ToolsArr = [
   {
@@ -171,6 +172,10 @@ const ToolsArr = [
   {
     icon: PhotoPea,
     name: 'PhotoPea',
+  },
+  {
+    icon: Opencart,
+    name: 'Opencart',
   },
 ];
 
