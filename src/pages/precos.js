@@ -9,7 +9,6 @@ import PriceTable from '../sections/PriceTable';
 const PricePage = () => (
   <Layout>
     <Header />
-    <LandingReduced />
     <PriceTable />
     <Footer />
   </Layout>

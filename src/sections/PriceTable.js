@@ -1,12 +1,14 @@
 import React from 'react';
 import { PricingTable, PricingSlot, PricingDetail } from 'react-pricing-table';
 import Section from '../components/Section';
+import PagSeguro from '../images/468x60_pagseguro_18x.gif';
 
 const PriceTable = () => {
   const whatsapp = 'https://wa.me/393770914006';
 
   return (
     <>
+      <div style={{ height: '50px' }}></div>
       <Section.Container id="Hora técnica">
         <Section.Header name="Hora técnica" icon="⏱" Box="Hora técnica" />
         <PricingTable highlightColor="#EA80B3">
@@ -44,6 +46,11 @@ const PriceTable = () => {
           icon="🖥"
           Box="Pricelist - SEM BACKEND"
         />
+        <p>
+          Sem backend: sem interface de edição do usuário. Na prática, se vocẽ
+          não tem blog e não precisa atualizar constantemente, esse serve pra
+          você.
+        </p>
         <PricingTable highlightColor="#EA80B3">
           <PricingSlot
             onClick={() => window.open(whatsapp, '_blank')}
@@ -95,10 +102,9 @@ const PriceTable = () => {
               {' '}
               Criação de <b>até 3 páginas</b> com os componentes do tema{' '}
             </PricingDetail>
-            <PricingDetail strikethrough>
+            <PricingDetail>
               {' '}
-              <b>Assistência de 30 dias</b> para tirar dúvidas e fazer
-              alterações
+              <b>Assistência de 7 dias</b> para tirar dúvidas e fazer alterações
             </PricingDetail>
           </PricingSlot>
           <PricingSlot
@@ -207,6 +213,11 @@ const PriceTable = () => {
           icon="🖥"
           Box="Pricelist"
         />
+        <p>
+          Com backend: com interface de edição do usuário. Pra quem tem blog ou
+          precisa atualizar constantemente
+        </p>
+
         <PricingTable highlightColor="#EA80B3">
           <PricingSlot
             onClick={() => window.open(whatsapp, '_blank')}
@@ -262,10 +273,9 @@ const PriceTable = () => {
               {' '}
               Criação de <b>até 3 páginas</b> com os componentes do tema{' '}
             </PricingDetail>
-            <PricingDetail strikethrough>
+            <PricingDetail>
               {' '}
-              <b>Assistência de 30 dias</b> para tirar dúvidas e fazer
-              alterações
+              <b>Assistência de 7 dias</b> para tirar dúvidas e fazer alterações
             </PricingDetail>
           </PricingSlot>
           <PricingSlot
@@ -418,12 +428,62 @@ const PriceTable = () => {
 
       <Section.Container id="Condições de pagamento">
         <Section.Header
-          name="Condições gerais de pagamento"
+          name="Condições de pagamento"
           icon="💰"
           Box="Condições"
         />
+        <h3>
+          Depósito Bancário{' '}
+          <span style={{ display: 'block', fontSize: '.8em' }}>
+            em 2x com -10%
+          </span>
+        </h3>
         <p>
-          Pagamento de 50% no início do projeto e 50% na entrega ou à combinar.
+          Pagamento de 50% no início do projeto e 50% na entrega por depósito
+          bancário (10% de desconto)
+        </p>
+        <h3>
+          PagSeguro{' '}
+          <span style={{ display: 'block', fontSize: '.8em' }}>em até 18x</span>
+        </h3>
+        <p>
+          <img
+            src={PagSeguro}
+            alt="Banner PagSeguro"
+            title="Parcele em até 18x"
+            width="100%"
+            style={{ maxWidth: '400px' }}
+          />
+        </p>
+        <h3>
+          PayPal{' '}
+          <span style={{ display: 'block', fontSize: '.8em' }}>
+            parcelamento disponível de acordo com a conta Paypal
+          </span>
+        </h3>
+        <p>
+          <table border="0" cellpadding="10" cellspacing="0" align="left">
+            <tbody>
+              <tr>
+                <td align="left"></td>
+              </tr>
+              <tr>
+                <td align="left">
+                  <a
+                    href="https://www.paypal.com/it/webapps/mpp/paypal-popup"
+                    title="Come funziona PayPal"
+                    onclick="javascript:window.open('https://www.paypal.com/it/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"
+                  >
+                    <img
+                      src="https://www.paypalobjects.com/webstatic/mktg/logo-center/logo_paypal_carte.jpg"
+                      border="0"
+                      alt="Marchi di accettazione PayPal"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </p>
       </Section.Container>
     </>

@@ -8,6 +8,7 @@ import Projects from '../sections/Projects';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Agenda from '../sections/Agenda';
+import Prices from '../sections/Prices';
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +17,7 @@ const IndexPage = () => (
     <About />
     <Tools />
     <Projects />
-    <Agenda />
+    <Prices />
     <Footer />
   </Layout>
 );
