@@ -56,7 +56,7 @@ const PriceTable = () => {
             onClick={() => window.open(whatsapp, '_blank')}
             buttonText="ACHO QUE ESSE JÁ DÁ"
             title="RÁPIDO E BÁSICO"
-            priceText="R$ 1.500,00"
+            priceText="R$ 1.580,00"
           >
             <PricingDetail>
               {' '}
@@ -111,7 +111,7 @@ const PriceTable = () => {
             onClick={() => window.open(whatsapp, '_blank')}
             buttonText="PRA MIM ESSE TÁ BOM!"
             title="CUSTOMIZADÍSSIMO"
-            priceText="R$ 2.500,00"
+            priceText="R$ 2.630,00"
           >
             <PricingDetail>
               {' '}
@@ -223,7 +223,7 @@ const PriceTable = () => {
             onClick={() => window.open(whatsapp, '_blank')}
             buttonText="É ESSE!"
             title="BÁSICO COM BACKEND"
-            priceText="R$ 1.800,00"
+            priceText="R$ 1.895,00"
           >
             <PricingDetail>
               {' '}
@@ -282,7 +282,7 @@ const PriceTable = () => {
             onClick={() => window.open(whatsapp, '_blank')}
             buttonText="ASSIM TÁ MELHOR!"
             title="CUSTOMIZADÍSSIMO COM BACKEND"
-            priceText="R$ 2.800,00"
+            priceText="R$ 2.950,00"
           >
             <PricingDetail>
               {' '}
@@ -435,7 +435,7 @@ const PriceTable = () => {
         <h3>
           Depósito Bancário{' '}
           <span style={{ display: 'block', fontSize: '.8em' }}>
-            em 2x com -10%
+            em 2x com -5%
           </span>
         </h3>
         <p>
@@ -461,7 +461,7 @@ const PriceTable = () => {
             parcelamento disponível de acordo com a conta Paypal
           </span>
         </h3>
-        <p>
+        <div>
           <table border="0" cellpadding="10" cellspacing="0" align="left">
             <tbody>
               <tr>
@@ -484,6 +484,24 @@ const PriceTable = () => {
               </tr>
             </tbody>
           </table>
+        </div>
+        <p>
+          <strong>Se interessou?</strong> Manda um WhatApp:{' '}
+          <a href="https://wa.me/393770914006">+39 377 091 4006</a>.
+        </p>
+        <p>
+          Atendo de qualquer lugar do mundo usando{' '}
+          <strong>
+            ferramentas modernas de reuniões online e monitoramento das horas de
+            trabalho
+          </strong>{' '}
+          para garantir <strong>segurança e conforto</strong> de criação do seu
+          projeto.
+        </p>
+        <p>
+          <strong>Ficou na dùvida?</strong> Manda um Whatsapp do mesmo jeito.
+          Vamos conversar sobre suas idéias e desejos e achar a melhor maneira,
+          juntos, de fazer elas acontecerem.
         </p>
       </Section.Container>
     </>
