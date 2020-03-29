@@ -1,5 +1,6 @@
 import React from 'react';
 
+import CreateReactApp from '../images/create-react-app.svg';
 import CSS from '../images/css.png';
 import FbBusiness from '../images/fb-businessmanager.jpg';
 import GatsbyLogo from '../images/Gatsby-Logo.svg';
@@ -10,6 +11,7 @@ import GoogleAnalytics from '../images/googleanalytics.png';
 import GraphQl from '../images/graphql.png';
 import Gulp from '../images/Gulp.png';
 import HTML from '../images/HTML.png';
+import Insomnia from '../images/insomnia.svg';
 import Javascript from '../images/javascript.png';
 import Jquery from '../images/jquery.png';
 import Mailchimp from '../images/mailchimp.jpg';
@@ -35,6 +37,7 @@ import DatoCMS from '../images/datocms.png';
 import Contentful from '../images/contentful.png';
 import Bitnami from '../images/bitnami.jpeg';
 import Opencart from '../images/opencart-logo.png';
+import Woocommerce from '../images/woocommerce.svg';
 
 const ToolsArr = [
   {
@@ -176,6 +179,18 @@ const ToolsArr = [
   {
     icon: Opencart,
     name: 'Opencart',
+  },
+  {
+    icon: Insomnia,
+    name: 'Insomnia',
+  },
+  {
+    icon: CreateReactApp,
+    name: 'Create React App',
+  },
+  {
+    icon: Woocommerce,
+    name: 'Woocommerce',
   },
 ];
 
