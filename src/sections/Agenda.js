@@ -1,14 +1,21 @@
 import React from 'react';
 
-import Calendly from '../components/Calendly';
 import Section from '../components/Section';
 
 const Agenda = () => (
-  <Section.Container id="Schedule a Chat">
-    <Section.Header name="Schedule a Chat" icon="📅" Box="Schedule a Chat" />
-    If you want to talk to me, just set here below an appointment. Easy as that!
-    ⚡
-    <Calendly />
+  <Section.Container id="contact">
+    <Section.Header name="Contact" icon="📅" Box="Contact" />
+    <p>
+      If you want to talk to me,{' '}
+      <a
+        href="https://sarahrgoncalves.typeform.com/to/NGgQ0D"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ display: 'inlineBlock' }}
+      >
+        go ahead!
+      </a>
+    </p>
   </Section.Container>
 );
 
