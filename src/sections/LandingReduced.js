@@ -7,7 +7,11 @@ import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
 
-const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
+const centerHorizontally = {
+  marginRight: 'auto',
+  marginLeft: 'auto',
+  padding: '1em',
+};
 
 const LandingPage = () => (
   <Section.Container id="home" minHeight="90vh" padding="0">
