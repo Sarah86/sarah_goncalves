@@ -15,7 +15,7 @@ const SectionContainer = styled.div`
   flex: 0 1 auto;
   flex-direction: column;
   justify-content: center;
-  padding: 5em 1em;
+  padding: ${props => (props.padding ? props.padding : '5em 1em')};
   scroll-behavior: smooth;
 `;
 
@@ -26,10 +26,13 @@ const Container = ({
   children,
   Background = DefaultBackground,
   minHeight,
+  padding,
 }) => (
   <Section id={id} style={{ position: 'relative' }}>
     <Background />
-    <SectionContainer minHeight={minHeight}>{children}</SectionContainer>
+    <SectionContainer minHeight={minHeight} padding={padding}>
+      {children}
+    </SectionContainer>
   </Section>
 );
 
@@ -38,6 +41,7 @@ Container.propTypes = {
   children: PropTypes.node.isRequired,
   Background: PropTypes.func,
   minHeight: PropTypes.string,
+  padding: PropTypes.string,
 };
 
 const Header = ({ name, icon = '', label = '' }) => (

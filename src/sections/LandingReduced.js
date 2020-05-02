@@ -10,7 +10,7 @@ import MouseIcon from '../components/MouseIcon';
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
 
 const LandingPage = () => (
-  <Section.Container id="home" minHeight="100vh">
+  <Section.Container id="home" minHeight="90vh" padding="0">
     <StaticQuery
       query={graphql`
         query SiteTitleReducedQuery {

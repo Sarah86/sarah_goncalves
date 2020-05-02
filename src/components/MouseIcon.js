@@ -4,16 +4,14 @@ import PropTypes from 'prop-types';
 
 const MouseContainer = styled.svg`
   max-width: 2.5rem;
-  width: 100%;
   height: auto;
 `;
 
 const ScrollLink = styled.span`
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
+  display: block;
+  text-align: center;
   cursor: pointer;
+  padding-top: 2em;
 
   @media only screen and (max-width: 700px) {
     display: none;

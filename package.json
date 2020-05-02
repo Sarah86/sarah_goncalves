@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-mate",
   "version": "2.2.1",
-  "description": "Gatsby v2 starter to create a top notch portfolio!",
+  "description": "Sarah Gonçalves - Portfolio",
   "main": "index.js",
   "scripts": {
     "build": "cleandir ./.cache && gatsby build",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmaSuriano/gatsby-starter-mate.git"
+    "url": "git+https://github.com/Sarah86/sarah-goncalves.git"
   },
   "keywords": [
     "gatsby",
@@ -21,7 +21,7 @@
     "PWA",
     "portfolio"
   ],
-  "author": "Ema Suriano",
+  "author": "Sarah Gonçalves",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EmaSuriano/gatsby-starter-mate/issues"
@@ -35,7 +35,7 @@
     "envfile": "^3.0.0",
     "eslint-plugin-flowtype": "^4.3.0",
     "gatsby": "2.15.28",
-    "gatsby-cli": "^2.10.0",
+    "gatsby-cli": "^2.12.7",
     "gatsby-plugin-google-analytics": "^2.1.19",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-google-gtag": "^1.1.11",

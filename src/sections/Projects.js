@@ -50,7 +50,7 @@ const ImageContainer = styled.div`
 
 const ProjectImage = styled(Image)`
   height: auto;
-  padding: 0 20px;
+  padding: 50px;
   position: relative;
   top: 50%;
   left: 50%;
