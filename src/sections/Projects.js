@@ -127,22 +127,26 @@ const Project = ({
               /> 
             </Box> */}
               <Box mx={1} fontSize={5}>
-                <SocialLink
-                  name="See project"
-                  fontAwesomeIcon="globe"
-                  url={projectUrl}
-                />
+                {projectUrl && (
+                  <SocialLink
+                    name="See project"
+                    fontAwesomeIcon="globe"
+                    url={projectUrl}
+                  />
+                )}
               </Box>
             </Flex>
-            <ImageSubtitle
-              bg="primaryLight"
-              color="white"
-              y="bottom"
-              x="right"
-              round
-            >
-              {type}
-            </ImageSubtitle>
+            {type && (
+              <ImageSubtitle
+                bg="primaryLight"
+                color="white"
+                y="bottom"
+                x="right"
+                round
+              >
+                {type}
+              </ImageSubtitle>
+            )}
             <Hide query={MEDIA_QUERY_SMALL}>
               <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
             </Hide>
@@ -194,9 +198,11 @@ const Projects = () => (
       render={({ contentfulAbout }) => (
         <CardContainer minWidth="350px" minWidthMobile="200px">
           {contentfulAbout.projects.map((p, i) => (
-            <Fade bottom delay={2 * 200}>
-              <Project key={p.id} {...p} />
-            </Fade>
+            <div style={{ width: '100%' }}>
+              <Fade bottom delay={2 * 200}>
+                <Project key={p.id} {...p} />
+              </Fade>
+            </div>
           ))}
         </CardContainer>
       )}
